@@ -7,16 +7,45 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/questionTV"
-        android:layout_width="360dp"
-        android:layout_height="43dp"
-        android:background="#C1A36D"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center"
-        android:text="What type of coat is best put on wet?"
-        android:textColor="#5d423d"
-        android:textSize="9pt" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#C1A36D" >
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="5dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#C1A36D" >
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="1dp" />
+
+            <TextView
+            android:id="@+id/questionTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="@string/q3text"
+            android:textColor="#5d423d"
+            android:textSize="20sp" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="1dp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="5dp" />
+    </LinearLayout>
 
     <Space
         android:layout_width="1dp"
@@ -39,17 +68,17 @@
             app:iconTint="#333041" />
 
         <Space
-            android:layout_width="5pt"
+            android:layout_width="12sp"
             android:layout_height="1dp" />
 
         <EditText
             android:id="@+id/answerET"
             android:layout_width="211dp"
             android:layout_height="wrap_content"
-            android:width="85pt"
+            android:width="172sp"
             android:fontFamily="sans-serif-condensed-light"
             android:gravity="center"
-            android:hint="Type your answer here."
+            android:hint="@string/answerET"
             android:textSize="15dp" />
 
     </LinearLayout>
@@ -58,33 +87,13 @@
         android:layout_width="1dp"
         android:layout_height="15dp" />
 
-    <LinearLayout
+    <Button
+        android:id="@+id/enterBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal" >
-
-        <Button
-            android:id="@+id/enterBTN"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ENTER"
-            android:textColor="#eeebec"
-            app:backgroundTint="#AF3131"
-            app:cornerRadius="0dp" />
-
-        <Space
-            android:layout_width="10pt"
-            android:layout_height="1dp" />
-
-        <Button
-            android:id="@+id/scoreBTN"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="SCORE"
-            android:textColor="#eeebec"
-            app:backgroundTint="#AF3131"
-            app:cornerRadius="0dp" />
-    </LinearLayout>
+        android:text="@string/enterBTN"
+        android:textColor="#eeebec"
+        app:backgroundTint="#AF3131"
+        app:cornerRadius="0dp" />
 
 </LinearLayout>

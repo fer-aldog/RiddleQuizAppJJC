@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">RiddleQuizAppJJC</string>
+    <string name="answerET">Itype mo dito ang sagot.</string>
+    <string name="enterBTN">ENTER</string>
+    <string name="correctMsg">Tama ka :D</string>
+    <string name="wrongMsg">jusme bat ka nagkamali</string>
+    <string name="hintText">Ang tamang sagot ay</string>
+
+
+        <string name="q1text">What type of coat is best put on wet?</string>
+        <string name="q1Ans">A coat of paint</string>
+
+    <string name="q2text">Ano ang may 13 na puso at walang ibang organs?</string>
+    <string name="q2Ans">Mga baraha</string>
+
+        <string name="q3text">What is in the beginning of everything\nand the end of everywhere?</string>
+        <string name="q3Ans">E</string>
+
+        <string name="q4text">What breaks when you say its name?Ano ang nasisira kapag </string>
+        <string name="q4Ans">Katahimikan</string>
+
+    <string name="q5text">Anong mas magaling tumikim kaysa mang-amoy?</string>
+    <string name="q5Ans">Ang dila</string>
+
+        <string name="q6text">Who has married many women but was never married?</string>
+        <string name="q6Ans">Priest</string>
+
+    <string name="q7text">Anong klaseng keso ang ginawa pabaliktad?</string>
+    <string name="q7Ans">Awanig</string>
+
+    <string name="q8text">Lumilipad ako buong araw pero hindi umaalis sa kinatatayuan ko.</string>
+    <string name="q8Ans">Watawat</string>
+
+    <string name="q9text">Ano ang makukuha mo pero hindi mo mahagis?/</string>
+    <string name="q9Ans">Sipon</string>
+
+    <string name="q10text">Mayroon ang lahat nito at hindi sila mawalan nito.</string>
+    <string name="q10Ans">Anino</string>
+
+</resources>
