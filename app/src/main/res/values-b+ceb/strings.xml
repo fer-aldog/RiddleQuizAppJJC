@@ -1,23 +1,23 @@
 <resources>
     <string name="app_name">RiddleQuizAppJJC</string>
-    <string name="answerET">Itype mo dito ang sagot.</string>
+    <string name="answerET">Itype imong tubag dinhi.</string>
     <string name="enterBTN">ENTER</string>
-    <string name="correctMsg">Tama ka :D</string>
-    <string name="wrongMsg">jusme bat ka nagkamali</string>
-    <string name="hintText">Ang tamang sagot ay</string>
+    <string name="correctMsg">Uy, natama ka :^)</string>
+    <string name="wrongMsg">Nganong namali man ka?</string>
+    <string name="hintText">Ang tamang tubag kay</string>
 
 
     <string name="q1text">What type of coat is best put on wet?</string>
     <string name="q1Ans">A coat of paint</string>
 
     <string name="q2text">What has 13 hearts but no other organs?</string>
-    <string name="q2Ans">Mga baraha</string>
+    <string name="q2Ans">A deck of cards</string>
 
     <string name="q3text">What is in the beginning of everything\nand the end of everywhere?</string>
     <string name="q3Ans">E</string>
 
     <string name="q4text">What breaks when you say its name?</string>
-    <string name="q4Ans">Katahimikan</string>
+    <string name="q4Ans">Silence</string>
 
     <string name="q5text">What tastes better than it smells?</string>
     <string name="q5Ans">Ang dila</string>
@@ -29,12 +29,12 @@
     <string name="q7Ans">Edam</string>
 
     <string name="q8text">I fly all day but stay in the same spot.</string>
-    <string name="q8Ans">Watawat</string>
+    <string name="q8Ans">Flag</string>
 
     <string name="q9text">What can you catch but not throw?</string>
     <string name="q9Ans">Sipon</string>
 
     <string name="q10text">Everyone has it and no one can lose it.</string>
-    <string name="q10Ans">Anino</string>
+    <string name="q10Ans">Shadow</string>
 
 </resources>
