@@ -6,15 +6,43 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="309dp"
-        android:layout_height="66dp"
-        android:background="#5B141414"
-        android:fontFamily="sans-serif-condensed"
-        android:gravity="center"
-        android:text="welcome to the void of nothingness\nenjoy your stay :)"
-        android:textColor="#BEBEBE"
-        android:textSize="9pt" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#5B141414" >
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="8dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="@string/greet"
+                android:textColor="#BEBEBE"
+                android:textSize="8pt" />
+
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="1dp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="8dp" />
+    </LinearLayout>
 
     <Space
         android:layout_width="1dp"
@@ -113,7 +141,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed"
                 android:gravity="center"
-                android:text="The user is responsible for any mishaps that\nhappens in this dimension."
+                android:text="@string/warn"
                 android:textColor="#BEBEBE"
                 android:textSize="8pt" />
 

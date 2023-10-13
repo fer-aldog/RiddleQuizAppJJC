@@ -15,7 +15,7 @@
 
         <Space
             android:layout_width="1dp"
-            android:layout_height="5dp" />
+            android:layout_height="7dp" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -24,7 +24,7 @@
             android:background="#C1A36D" >
 
             <Space
-                android:layout_width="5dp"
+                android:layout_width="7dp"
                 android:layout_height="1dp" />
 
             <TextView
@@ -33,18 +33,18 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
             android:gravity="center"
-            android:text="@string/q3text"
+            android:text="@string/q1text"
             android:textColor="#5d423d"
             android:textSize="20sp" />
 
             <Space
-                android:layout_width="5dp"
+                android:layout_width="7dp"
                 android:layout_height="1dp" />
         </LinearLayout>
 
         <Space
             android:layout_width="1dp"
-            android:layout_height="5dp" />
+            android:layout_height="7dp" />
     </LinearLayout>
 
     <Space
@@ -81,6 +81,7 @@
             android:hint="@string/answerET"
             android:textSize="15dp" />
 
+
     </LinearLayout>
 
     <Space
@@ -91,7 +92,7 @@
         android:id="@+id/enterBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/enterBTN"
+        android:text="ENTER"
         android:textColor="#eeebec"
         app:backgroundTint="#AF3131"
         app:cornerRadius="0dp" />

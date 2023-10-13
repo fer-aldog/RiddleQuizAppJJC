@@ -1,40 +1,42 @@
 <resources>
     <string name="app_name">RiddleQuizAppJJC</string>
     <string name="answerET">Itype imong tubag dinhi.</string>
-    <string name="enterBTN">ENTER</string>
     <string name="correctMsg">Uy, natama ka :^)</string>
     <string name="wrongMsg">Nganong namali man ka?</string>
     <string name="hintText">Ang tamang tubag kay</string>
 
 
-    <string name="q1text">What type of coat is best put on wet?</string>
-    <string name="q1Ans">A coat of paint</string>
+    <string name="q1text">Pwede ni himuon sa mga bata, pero di\nnila makitan o magunitan.</string>
+    <string name="q1Ans">Saba</string>
 
-    <string name="q2text">What has 13 hearts but no other organs?</string>
-    <string name="q2Ans">A deck of cards</string>
+    <string name="q2text">Asa ang Huwebes mauna kaysa\nsa Biyernes?</string>
+    <string name="q2Ans">Diksiyonaryo</string>
 
-    <string name="q3text">What is in the beginning of everything\nand the end of everywhere?</string>
-    <string name="q3Ans">E</string>
+    <string name="q3text">Unsay naay liog pero walay ulo?</string>
+    <string name="q3Ans">Botelya</string>
 
-    <string name="q4text">What breaks when you say its name?</string>
-    <string name="q4Ans">Silence</string>
+    <string name="q4text">Unsay maguba kung ingnon nimo\niyang pangalan?</string>
+    <string name="q4Ans">Kahilom</string>
 
-    <string name="q5text">What tastes better than it smells?</string>
-    <string name="q5Ans">Ang dila</string>
+    <string name="q5text">Kung naa kay ilabog nga batong asul sa\nRed Sea, unsay mahitabo ani?</string>
+    <string name="q5Ans">Mabasa</string>
 
-    <string name="q6text">Who has married many women but was never married?</string>
+    <string name="q6text">Kinsay nikasal ug daghang babae pero\nwala pa gikasal?</string>
     <string name="q6Ans">Pari</string>
 
-    <string name="q7text">What type of cheese is made backward?</string>
-    <string name="q7Ans">Edam</string>
+    <string name="q7text">Unsang keso ang gihimo pabaliktad?</string>
+    <string name="q7Ans">Omihig</string>
 
-    <string name="q8text">I fly all day but stay in the same spot.</string>
-    <string name="q8Ans">Flag</string>
+    <string name="q8text">Mulupad kos tibuok adlaw pero di\nko muhawa sa akong pwesto.</string>
+    <string name="q8Ans">Bandila</string>
 
-    <string name="q9text">What can you catch but not throw?</string>
-    <string name="q9Ans">Sipon</string>
+    <string name="q9text">Unsay makuha nimo pero di nimo\nmalabog?</string>
+    <string name="q9Ans">Sip-on</string>
 
-    <string name="q10text">Everyone has it and no one can lose it.</string>
-    <string name="q10Ans">Shadow</string>
+    <string name="q10text">Naa ang tanan ani pero di nila mawala.</string>
+    <string name="q10Ans">Anino</string>
+
+    <string name="greet">maayong pag-abot sa wala lang gyud!\nenjoy your stay :)</string>
+    <string name="warn">Ang user ang responsable sa mga sakunang\nmahitabo aning dimensyon.</string>
 
 </resources>

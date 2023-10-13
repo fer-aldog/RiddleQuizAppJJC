@@ -1,40 +1,42 @@
 <resources>
     <string name="app_name">RiddleQuizAppJJC</string>
     <string name="answerET">Itype mo dito ang sagot.</string>
-    <string name="enterBTN">ENTER</string>
     <string name="correctMsg">Tama ka :D</string>
     <string name="wrongMsg">jusme bat ka nagkamali</string>
     <string name="hintText">Ang tamang sagot ay</string>
 
 
-    <string name="q1text">What type of coat is best put on wet?</string>
-    <string name="q1Ans">A coat of paint</string>
+    <string name="q1text">Pwede itong gawin ng mga bata, pero\nhindi nila makita o mahawak.</string>
+    <string name="q1Ans">Ingay</string>
 
-    <string name="q2text">What has 13 hearts but no other organs?</string>
-    <string name="q2Ans">Mga baraha</string>
+    <string name="q2text">Saan ang Huwebes nauuna bago\nang Biyernes?</string>
+    <string name="q2Ans">Diksiyonaryo</string>
 
-    <string name="q3text">What is in the beginning of everything\nand the end of everywhere?</string>
-    <string name="q3Ans">E</string>
+    <string name="q3text">Ano ang may leeg pero walang ulo?</string>
+    <string name="q3Ans">Bote</string>
 
-    <string name="q4text">What breaks when you say its name?</string>
+    <string name="q4text">Anong nasisira kapag sabihin mo\nang pangalan niya?</string>
     <string name="q4Ans">Katahimikan</string>
 
-    <string name="q5text">What tastes better than it smells?</string>
-    <string name="q5Ans">Ang dila</string>
+    <string name="q5text">Kung may ibato kang batong asul sa\nRed Sea, anong mangyayari nito?</string>
+    <string name="q5Ans">Mabasa</string>
 
-    <string name="q6text">Who has married many women but was never married?</string>
+    <string name="q6text">Sino ang nagkakasal ng madaming\nbabae pero hindi pa kinasal?</string>
     <string name="q6Ans">Pari</string>
 
-    <string name="q7text">What type of cheese is made backward?</string>
-    <string name="q7Ans">Edam</string>
+    <string name="q7text">Anong keso ang gawang baliktad?"</string>
+    <string name="q7Ans">Gnawag</string>
 
-    <string name="q8text">I fly all day but stay in the same spot.</string>
+    <string name="q8text">Lumilipad ako buong araw pero hindi\nako umaalis sa pwesto ko.</string>
     <string name="q8Ans">Watawat</string>
 
-    <string name="q9text">What can you catch but not throw?</string>
+    <string name="q9text">Anong iyong pwedeng makuha pero\nhindi mo mabato?</string>
     <string name="q9Ans">Sipon</string>
 
-    <string name="q10text">Everyone has it and no one can lose it.</string>
+    <string name="q10text">Mayroon ang lahat nito at hindi\nnila mawala.</string>
     <string name="q10Ans">Anino</string>
+
+    <string name="greet">maligayang pagdating sa void of nothingness\nenjoy your stay :)</string>
+    <string name="warn">Ang user ang responsable sa mga sakunang\nmangyayari sa itong dimensyon.</string>
 
 </resources>
