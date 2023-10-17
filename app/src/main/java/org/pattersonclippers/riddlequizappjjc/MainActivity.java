@@ -3,6 +3,7 @@ package org.pattersonclippers.riddlequizappjjc;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     int score, hintsUsed, currentIndex;
     Question q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, currentQ;
     Question[] questions;
+    MediaPlayer toBePlayed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,24 +38,28 @@ public class MainActivity extends AppCompatActivity {
         currentIndex = 0;
         score = 0;
         hintsUsed = 0;
-        q1 = new Question(getString(R.string.q1text), getString(R.string.q1Ans));
-        q2 = new Question(getString(R.string.q2text), getString(R.string.q2Ans));
-        q3 = new Question(getString(R.string.q3text), getString(R.string.q3Ans));
-        q4 = new Question(getString(R.string.q4text), getString(R.string.q4Ans));
-        q5 = new Question(getString(R.string.q5text), getString(R.string.q5Ans));
-        q6 = new Question(getString(R.string.q6text), getString(R.string.q6Ans));
-        q7 = new Question(getString(R.string.q7text), getString(R.string.q7Ans));
-        q8 = new Question(getString(R.string.q8text), getString(R.string.q8Ans));
-        q9 = new Question(getString(R.string.q9text), getString(R.string.q9Ans));
-        q10 = new Question(getString(R.string.q10text), getString(R.string.q10Ans));
+        q1 = new Question(getString(R.string.q1text), getString(R.string.q1Ans), R.raw.bgm1);
+        q2 = new Question(getString(R.string.q2text), getString(R.string.q2Ans), R.raw.bgm2);
+        q3 = new Question(getString(R.string.q3text), getString(R.string.q3Ans), R.raw.bgm3);
+        q4 = new Question(getString(R.string.q4text), getString(R.string.q4Ans), R.raw.bgm4);
+        q5 = new Question(getString(R.string.q5text), getString(R.string.q5Ans), R.raw.bgm5);
+        q6 = new Question(getString(R.string.q6text), getString(R.string.q6Ans), R.raw.bgm6);
+        q7 = new Question(getString(R.string.q7text), getString(R.string.q7Ans), R.raw.bgm7);
+        q8 = new Question(getString(R.string.q8text), getString(R.string.q8Ans), R.raw.bgm8);
+        q9 = new Question(getString(R.string.q9text), getString(R.string.q9Ans), R.raw.bgm9);
+        q10 = new Question(getString(R.string.q10text), getString(R.string.q10Ans), R.raw.bgm10);
         questions = new Question[] {q1, q2, q3, q4, q5, q6, q7, q8, q9, q10};
         currentQ = questions[currentIndex];
 
+        toBePlayed = MediaPlayer.create(MainActivity.this, R.raw.bgm1);
+        toBePlayed.start();
         enterBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 myAnswer = answerET.getText().toString();
                 int duration = Toast.LENGTH_SHORT;
+                toBePlayed.stop();
+                toBePlayed.release();
                 if (currentQ.getCorrectAnswer().equalsIgnoreCase(myAnswer)) {
                     Toast t = Toast.makeText(getApplicationContext(), getString(R.string.correctMsg), duration);
                     t.show();
@@ -68,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
                     currentQ = questions[currentIndex];
                     questionTV.setText(currentQ.getQText());
                     answerET.setText("");
+                    toBePlayed = MediaPlayer.create(MainActivity.this, currentQ.getBGM());
                 }
                 else {
                     Intent myIntent = new Intent(MainActivity.this, ScoreActivity.class);
@@ -75,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
                     myIntent.putExtra("hintsUsed", hintsUsed);
                     startActivity(myIntent);
                 }
+                toBePlayed.start();
             }
         });
 
