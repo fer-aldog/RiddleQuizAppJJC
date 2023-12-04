@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,13 +28,18 @@ public class MainActivity extends AppCompatActivity {
     TextView  questionTV;
     EditText answerET;
     Button enterBTN, hintBTN;
-    String showHint, myAnswer;
+    String showHint, myAnswer, theme, initialName;
     int score, hintsUsed, currentIndex;
+    LinearLayout mainbackgroundLL, qtextbgLL;
     Question q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, currentQ;
     Question[] questions;
     MediaPlayer toBePlayed;
     FirebaseDatabase database;
     DatabaseReference myRef;
+    private SharedPreferences mySharedPreferences;
+    private String spFilename = "org.pattersonclippers.sharedpreferencesjjc";
+    private final String COLOR_KEY = "color";
+    private final String UN_KEY = "username";
 
     final String TAG = "IAMATAGPLS";
 
@@ -41,16 +47,27 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //initialise shared preferences
+        mySharedPreferences = getSharedPreferences(spFilename, MODE_PRIVATE);
+
+        //read initial value for color from last time
+        theme = mySharedPreferences.getString(COLOR_KEY, "riddle");
+        initialName = mySharedPreferences.getString(UN_KEY, "player");
 
         questionTV = (TextView) findViewById(R.id.questionTV);
         answerET = (EditText) findViewById(R.id.answerET);
         enterBTN = (Button) findViewById(R.id.enterBTN);
         hintBTN = (Button) findViewById(R.id.hintBTN);
+        mainbackgroundLL = (LinearLayout) findViewById(R.id.mainbackgroundLL);
+        qtextbgLL = (LinearLayout) findViewById(R.id.qtextbgLL);
         showHint = "";
         myAnswer = "";
         currentIndex = 0;
         score = 0;
         hintsUsed = 0;
+        int duration = Toast.LENGTH_SHORT;
+        Toast t = Toast.makeText(getApplicationContext(), theme, duration);
+        t.show();
 
         q1 = new Question(getString(R.string.q1text), getString(R.string.q1Ans), R.raw.bgm1);
         q2 = new Question(getString(R.string.q2text), getString(R.string.q2Ans), R.raw.bgm2);
@@ -64,6 +81,23 @@ public class MainActivity extends AppCompatActivity {
         q10 = new Question(getString(R.string.q10text), getString(R.string.q10Ans), R.raw.bgm10);
         questions = new Question[] {q1, q2, q3, q4, q5, q6, q7, q8, q9, q10};
         currentQ = questions[currentIndex];
+
+        if(theme.equals("gloomy")) {
+            mainbackgroundLL.setBackgroundColor(getResources().getColor(R.color.gloomy_bg));
+            qtextbgLL.setBackgroundColor(getResources().getColor(R.color.gloomy_questionbg));
+            questionTV.setTextColor(getResources().getColor(R.color.gloomy_qtextcolor));
+            answerET.setHintTextColor(getResources().getColor(R.color.gloomy_edittext));
+            hintBTN.setBackgroundColor(getResources().getColor(R.color.gloomy_hintbtn));
+            enterBTN.setBackgroundColor(getResources().getColor(R.color.gloomy_enterbtn));
+        }
+        if(theme.equals("riddle")) {
+            mainbackgroundLL.setBackgroundColor(getResources().getColor(R.color.riddle_bg));
+            qtextbgLL.setBackgroundColor(getResources().getColor(R.color.riddle_questionbg));
+            questionTV.setTextColor(getResources().getColor(R.color.riddle_qtextcolor));
+            answerET.setHintTextColor(getResources().getColor(R.color.riddle_edittext));
+            hintBTN.setBackgroundColor(getResources().getColor(R.color.riddle_hintbtn));
+            enterBTN.setBackgroundColor(getResources().getColor(R.color.riddle_enterbtn));
+        }
 
         // Write a message to the database
         database = FirebaseDatabase.getInstance();

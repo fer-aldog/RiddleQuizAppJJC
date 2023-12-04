@@ -53,17 +53,17 @@ public class SettingsActivity extends AppCompatActivity {
             backgroundLL.setBackgroundColor(getResources().getColor(R.color.riddle_bg));
             greetingTV.setTextColor(getResources().getColor(R.color.riddle_qtextcolor));
             startBTN.setBackgroundColor(getResources().getColor(R.color.riddle_hintbtn));
-            startBTN.setTextColor(getResources().getColor(R.color.riddle_hinticon));
+            startBTN.setTextColor(getResources().getColor(R.color.def_txt));
             saveBTN.setBackgroundColor(getResources().getColor(R.color.riddle_hintbtn));
-            saveBTN.setTextColor(getResources().getColor(R.color.riddle_hinticon));
+            saveBTN.setTextColor(getResources().getColor(R.color.def_txt));
             usernameET.setHintTextColor(getResources().getColor(R.color.riddle_edittext));
         } else if (initialColor == R.color.gloomy_bg) {
             backgroundLL.setBackgroundColor(getResources().getColor(R.color.gloomy_bg));
             greetingTV.setTextColor(getResources().getColor(R.color.gloomy_questionbg));
             startBTN.setBackgroundColor(getResources().getColor(R.color.gloomy_hintbtn));
-            startBTN.setTextColor(getResources().getColor(R.color.gloomy_hinticon));
+            startBTN.setTextColor(getResources().getColor(R.color.def_txt));
             saveBTN.setBackgroundColor(getResources().getColor(R.color.gloomy_hintbtn));
-            saveBTN.setTextColor(getResources().getColor(R.color.gloomy_hinticon));
+            saveBTN.setTextColor(getResources().getColor(R.color.def_txt));
             usernameET.setHintTextColor(getResources().getColor(R.color.gloomy_enterbtn));
         } else {
             backgroundLL.setBackgroundColor(getResources().getColor(R.color.def_bg));
@@ -84,11 +84,12 @@ public class SettingsActivity extends AppCompatActivity {
                 backgroundLL.setBackgroundColor(getResources().getColor(R.color.riddle_bg));
                 greetingTV.setTextColor(getResources().getColor(R.color.riddle_qtextcolor));
                 startBTN.setBackgroundColor(getResources().getColor(R.color.riddle_hintbtn));
-                startBTN.setTextColor(getResources().getColor(R.color.riddle_hinticon));
+                startBTN.setTextColor(getResources().getColor(R.color.def_txt));
                 saveBTN.setBackgroundColor(getResources().getColor(R.color.riddle_hintbtn));
-                saveBTN.setTextColor(getResources().getColor(R.color.riddle_hinticon));
+                saveBTN.setTextColor(getResources().getColor(R.color.def_txt));
                 usernameET.setHintTextColor(getResources().getColor(R.color.riddle_edittext));
-                preferencesEditor.putInt(COLOR_KEY, R.color.riddle_bg);
+                String theme = "riddle";
+                preferencesEditor.putString(COLOR_KEY, theme);
                 preferencesEditor.apply();
             }
         });
@@ -99,11 +100,12 @@ public class SettingsActivity extends AppCompatActivity {
                 backgroundLL.setBackgroundColor(getResources().getColor(R.color.gloomy_bg));
                 greetingTV.setTextColor(getResources().getColor(R.color.gloomy_questionbg));
                 startBTN.setBackgroundColor(getResources().getColor(R.color.gloomy_hintbtn));
-                startBTN.setTextColor(getResources().getColor(R.color.gloomy_hinticon));
+                startBTN.setTextColor(getResources().getColor(R.color.def_txt));
                 saveBTN.setBackgroundColor(getResources().getColor(R.color.gloomy_hintbtn));
-                saveBTN.setTextColor(getResources().getColor(R.color.gloomy_hinticon));
+                saveBTN.setTextColor(getResources().getColor(R.color.def_txt));
                 usernameET.setHintTextColor(getResources().getColor(R.color.gloomy_enterbtn));
-                preferencesEditor.putInt(COLOR_KEY, R.color.gloomy_bg);
+                String theme = "gloomy";
+                preferencesEditor.putString(COLOR_KEY, theme);
                 preferencesEditor.apply();
             }
         });

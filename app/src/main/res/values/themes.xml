@@ -6,4 +6,8 @@
     </style>
 
     <style name="Theme.RiddleQuizAppJJC" parent="Base.Theme.RiddleQuizAppJJC" />
+
+    <style name="RiddleTheme" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#00FF00</item>
+    </style>
 </resources>

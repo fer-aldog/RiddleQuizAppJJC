@@ -5,13 +5,15 @@
     android:layout_height="match_parent"
     android:background="#335157"
     android:gravity="center"
+    android:id="@+id/mainbackgroundLL"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#9ACDCDCD"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:id="@+id/qtextbgLL">
 
         <Space
             android:layout_width="1dp"
@@ -64,7 +66,7 @@
             app:cornerRadius="0dp"
             app:icon="@android:drawable/ic_menu_search"
             app:iconGravity="textEnd"
-            app:iconTint="#195E6A" />
+            app:iconTint="#000000" />
 
         <Space
             android:layout_width="12sp"
