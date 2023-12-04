@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "857016138547",
+    "project_id": "riddlequizappjjc",
+    "storage_bucket": "riddlequizappjjc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:857016138547:android:d3ab8d37d2fc4c262e9c46",
+        "android_client_info": {
+          "package_name": "org.pattersonclippers.riddlequizappjjc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq-UXydGpQUbm0Bbm5AiAjA0wsIxeHfzQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
