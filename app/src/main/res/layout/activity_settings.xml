@@ -1,9 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SettingsActivity">
+    android:background="#A9EFCB"
+    android:id="@+id/backgroundLL"
+    android:gravity="center"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/greetingTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Welcome, player!\nPress the start button to begin.\nYou can also change the color\nscheme of this game."
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="12dp" />
+
+    <EditText
+        android:id="@+id/usernameET"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:width="172sp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:hint="Type your username here."
+        android:textColorHint="#74000000"
+        android:textSize="15dp" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="6dp" />
+
+    <Button
+        android:id="@+id/saveBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:textColor="#A9DD56"
+        android:textSize="17sp"
+        app:backgroundTint="#29700B"
+        app:cornerRadius="5sp" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="12dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/gloomythemeBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gloomy"
+            android:textColor="#434750"
+            android:textSize="17sp"
+            app:backgroundTint="#99A0AF"
+            app:cornerRadius="10sp" /> />
+
+        <Space
+            android:layout_width="35dp"
+            android:layout_height="1dp" />
+
+        <Button
+            android:id="@+id/riddlethemeBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Riddle"
+            android:textColor="#BCEDD5A6"
+            android:textSize="17sp"
+            app:backgroundTint="#951813"
+            app:cornerRadius="10sp" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="12dp" />
+
+    <Button
+        android:id="@+id/startBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:textColor="#A9DD56"
+        android:textSize="17sp"
+        app:backgroundTint="#29700B"
+        app:cornerRadius="5sp" />
+
+</LinearLayout>

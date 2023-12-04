@@ -4,7 +4,9 @@
     <string name="correctMsg">You got it right!</string>
     <string name="wrongMsg">You got it wrong :(</string>
     <string name="hintText">The answer is</string>
-
+    <string name="greet">welcome to the void of nothingness\nenjoy your stay :)</string>
+    <string name="warn">The user is responsible for any mishaps that\nhappens in this dimension.</string>
+    <string name="prevscore">Compare score with the previous player!</string>
 
     <string name="q1text">Kids can make it, but never hold it\nor see it.</string>
     <string name="q1Ans">Noise</string>
@@ -35,9 +37,4 @@
 
     <string name="q10text">Everyone has it and no one can lose it.</string>
     <string name="q10Ans">Shadow</string>
-
-    <string name="greet">welcome to the void of nothingness\nenjoy your stay :)</string>
-    <string name="warn">The user is responsible for any mishaps that\nhappens in this dimension.</string>
-
-
 </resources>

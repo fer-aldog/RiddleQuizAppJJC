@@ -1,47 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#951813"
+    android:background="#24445C"
     android:gravity="center"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="#5B141414" >
-
-        <Space
-            android:layout_width="1dp"
-            android:layout_height="8dp" />
+        android:gravity="center"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:background="#6F8B9B"
+            android:orientation="vertical">
 
             <Space
-                android:layout_width="8dp"
-                android:layout_height="1dp" />
+                android:layout_width="1dp"
+                android:layout_height="8dp" />
 
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-condensed"
-                android:gravity="center"
-                android:text="@string/greet"
-                android:textColor="#BEBEBE"
-                android:textSize="8pt" />
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="1dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="@string/greet"
+                    android:textColor="#121212"
+                    android:textSize="8pt" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="1dp" />
+            </LinearLayout>
 
             <Space
-                android:layout_width="8dp"
-                android:layout_height="1dp" />
-        </LinearLayout>
+                android:layout_width="1dp"
+                android:layout_height="8dp" />
 
-        <Space
-            android:layout_width="1dp"
-            android:layout_height="8dp" />
+        </LinearLayout>
     </LinearLayout>
 
     <Space
@@ -49,16 +58,25 @@
         android:layout_height="15pt" />
 
     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#5C141414"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="343dp"
         android:layout_height="128dp"
-        android:background="#5C141414"
+        android:background="#6F8B9B"
         android:gravity="center"
         android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="114dp"
             android:layout_height="wrap_content"
-            android:background="#BFC1A36D"
+            android:background="#77355B6C"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -68,7 +86,7 @@
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
                 android:text="Score:"
-                android:textColor="#010101"
+                android:textColor="#000000"
                 android:textSize="14pt" />
 
             <TextView
@@ -76,7 +94,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
-                android:textColor="#a11d15"
+                android:textColor="#000000"
                 android:textSize="20pt" />
 
         </LinearLayout>
@@ -88,7 +106,7 @@
         <LinearLayout
             android:layout_width="181dp"
             android:layout_height="wrap_content"
-            android:background="#BFC1A36D"
+            android:background="#77355B6C"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -98,7 +116,7 @@
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
                 android:text="Hint count:"
-                android:textColor="#010101"
+                android:textColor="#FF000000"
                 android:textSize="14pt" />
 
             <TextView
@@ -106,7 +124,122 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
-                android:textColor="#a11d15"
+                android:textColor="#FF000000"
+                android:textSize="20pt" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="15pt" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#6F8B9B"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="8dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="1dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="@string/prevscore"
+                    android:textColor="#FF121212"
+                    android:textSize="8pt" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="8dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="343dp"
+        android:layout_height="128dp"
+        android:background="#6F8B9B"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:background="#77355B6C"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Score:"
+                android:textColor="#FF000000"
+                android:textSize="14pt" />
+
+            <TextView
+                android:id="@+id/prevScoreTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#FF000000"
+                android:textSize="20pt" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="8pt"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:background="#77355B6C"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Hint count:"
+                android:textColor="#FF000000"
+                android:textSize="14pt" />
+
+            <TextView
+                android:id="@+id/prevHintsTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#FF000000"
                 android:textSize="20pt" />
 
         </LinearLayout>
@@ -117,42 +250,16 @@
         android:layout_width="1dp"
         android:layout_height="15pt" />
 
-    <LinearLayout
+    <Button
+        android:id="@+id/coolBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="#5B141414" >
-
-        <Space
-            android:layout_width="1dp"
-            android:layout_height="8dp" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Space
-                android:layout_width="8dp"
-                android:layout_height="1dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-condensed"
-                android:gravity="center"
-                android:text="@string/warn"
-                android:textColor="#BEBEBE"
-                android:textSize="8pt" />
-
-            <Space
-                android:layout_width="8dp"
-                android:layout_height="1dp" />
-        </LinearLayout>
-
-        <Space
-            android:layout_width="1dp"
-            android:layout_height="8dp" />
-    </LinearLayout>
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Wanna do something cool?\nClick me!"
+        android:textColor="#FF121212"
+        android:textSize="8pt"
+        app:backgroundTint="#6F8B9B"
+        app:cornerRadius="0dp" />
 
 </LinearLayout>

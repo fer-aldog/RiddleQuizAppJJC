@@ -3,8 +3,10 @@ package org.pattersonclippers.riddlequizappjjc;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,6 +14,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.color.utilities.Score;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +32,10 @@ public class MainActivity extends AppCompatActivity {
     Question q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, currentQ;
     Question[] questions;
     MediaPlayer toBePlayed;
+    FirebaseDatabase database;
+    DatabaseReference myRef;
+
+    final String TAG = "IAMATAGPLS";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         currentIndex = 0;
         score = 0;
         hintsUsed = 0;
+
         q1 = new Question(getString(R.string.q1text), getString(R.string.q1Ans), R.raw.bgm1);
         q2 = new Question(getString(R.string.q2text), getString(R.string.q2Ans), R.raw.bgm2);
         q3 = new Question(getString(R.string.q3text), getString(R.string.q3Ans), R.raw.bgm3);
@@ -51,6 +65,27 @@ public class MainActivity extends AppCompatActivity {
         questions = new Question[] {q1, q2, q3, q4, q5, q6, q7, q8, q9, q10};
         currentQ = questions[currentIndex];
 
+        // Write a message to the database
+        database = FirebaseDatabase.getInstance();
+        myRef = database.getReference("message");
+
+        // Read from the database
+        myRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                // This method is called once with the initial value and again
+                // whenever data at this location is updated.
+                String value = dataSnapshot.getValue(String.class);
+                Log.d(TAG, "Value is: " + value);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                // Failed to read value
+                Log.w(TAG, "Failed to read value.", error.toException());
+            }
+        });
+
         toBePlayed = MediaPlayer.create(MainActivity.this, R.raw.bgm1);
         toBePlayed.start();
         enterBTN.setOnClickListener(new View.OnClickListener() {
@@ -58,8 +93,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 myAnswer = answerET.getText().toString();
                 int duration = Toast.LENGTH_SHORT;
+
                 toBePlayed.stop();
-                toBePlayed.release();
+
                 if (currentQ.getCorrectAnswer().equalsIgnoreCase(myAnswer)) {
                     Toast t = Toast.makeText(getApplicationContext(), getString(R.string.correctMsg), duration);
                     t.show();
@@ -74,12 +110,15 @@ public class MainActivity extends AppCompatActivity {
                     currentQ = questions[currentIndex];
                     questionTV.setText(currentQ.getQText());
                     answerET.setText("");
+
+                    toBePlayed.release();
                     toBePlayed = MediaPlayer.create(MainActivity.this, currentQ.getBGM());
                 }
                 else {
                     Intent myIntent = new Intent(MainActivity.this, ScoreActivity.class);
                     myIntent.putExtra("score", score);
                     myIntent.putExtra("hintsUsed", hintsUsed);
+
                     startActivity(myIntent);
                 }
                 toBePlayed.start();

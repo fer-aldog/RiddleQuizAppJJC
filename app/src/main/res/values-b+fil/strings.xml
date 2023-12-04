@@ -4,7 +4,9 @@
     <string name="correctMsg">Tama ka :D</string>
     <string name="wrongMsg">jusme bat ka nagkamali</string>
     <string name="hintText">Ang tamang sagot ay</string>
-
+    <string name="greet">maligayang pagdating sa void of nothingness\nenjoy your stay :)</string>
+    <string name="warn">Ang user ang responsable sa mga sakunang\nmangyayari sa itong dimensyon.</string>
+    <string name="prevscore">Magkumpara kayo sa nakaraang player!</string>
 
     <string name="q1text">Pwede itong gawin ng mga bata, pero\nhindi nila makita o mahawak.</string>
     <string name="q1Ans">Ingay</string>
@@ -35,8 +37,4 @@
 
     <string name="q10text">Mayroon ang lahat nito at hindi\nnila mawala.</string>
     <string name="q10Ans">Anino</string>
-
-    <string name="greet">maligayang pagdating sa void of nothingness\nenjoy your stay :)</string>
-    <string name="warn">Ang user ang responsable sa mga sakunang\nmangyayari sa itong dimensyon.</string>
-
 </resources>

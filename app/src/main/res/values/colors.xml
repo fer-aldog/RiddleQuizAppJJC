@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    default
+    <color name="def_bg">#FFA9EFCB</color>
+    <color name="def_txt">#FF000000</color>
+    <color name="def_hint">#74000000</color>
+    <color name="def_btn">#FF29700B</color>
+    <color name="def_btntxt">#FFA9DD56</color>
+
+    riddle color scheme
+    <color name="riddle_bg">#FFF1E39F</color>
+    <color name="riddle_questionbg">#FFC1A36D</color>
+    <color name="riddle_qtextcolor">#FF5D423D</color>
+    <color name="riddle_edittext">#FF502E1D</color>
+    <color name="riddle_hintbtn">#FFC34747</color>
+    <color name="riddle_hinticon">#FF3C0508</color>
+    <color name="riddle_enterbtn">#FFAF3131</color>
+
+    <color name="riddle_scorebg">#FF951813</color>
+    <color name="riddle_textbg">#5B141414</color>
+    <color name="riddle_textcolor">#FFBEBEBE</color>
+    <color name="riddle_countwindow">#BFC1A36D</color>
+    <color name="riddle_counttext">#FF010101</color>
+    <color name="riddle_numbercolor">#FFA11D15</color>
+
+    gloomy color scheme
+    <color name="gloomy_bg">#FF335157</color>
+    <color name="gloomy_questionbg">#9ACDCDCD</color>
+    <color name="gloomy_qtextcolor">#FF373737</color>
+    <color name="gloomy_edittext">#FFD8D8D8</color>
+    <color name="gloomy_hintbtn">#FF838383</color>
+    <color name="gloomy_hinticon">#FF195E6A</color>
+    <color name="gloomy_enterbtn">#FF6C6C6C</color>
+
+    <color name="gloomy_scorebg">#FF24445C</color>
+    <color name="gloomy_textbg">#FF6F8B9B</color>
+    <color name="gloomy_textcolor">#FF121212</color>
+    <color name="gloomy_countwindow">#77355B6C</color>
+    <color name="gloomy_counttext">#FF000000</color>
+    <color name="gloomy_numbercolor">#FF000000</color>
+
 </resources>

@@ -4,7 +4,9 @@
     <string name="correctMsg">Uy, natama ka :^)</string>
     <string name="wrongMsg">Nganong namali man ka?</string>
     <string name="hintText">Ang tamang tubag kay</string>
-
+    <string name="greet">maayong pag-abot sa wala lang gyud!\nenjoy your stay :)</string>
+    <string name="warn">Ang user ang responsable sa mga sakunang\nmahitabo aning dimensyon.</string>
+    <string name="prevscore">Ikumpara imong puntos sa kanhiang player!</string>
 
     <string name="q1text">Pwede ni himuon sa mga bata, pero di\nnila makitan o magunitan.</string>
     <string name="q1Ans">Saba</string>
@@ -35,8 +37,4 @@
 
     <string name="q10text">Naa ang tanan ani pero di nila mawala.</string>
     <string name="q10Ans">Anino</string>
-
-    <string name="greet">maayong pag-abot sa wala lang gyud!\nenjoy your stay :)</string>
-    <string name="warn">Ang user ang responsable sa mga sakunang\nmahitabo aning dimensyon.</string>
-
 </resources>
