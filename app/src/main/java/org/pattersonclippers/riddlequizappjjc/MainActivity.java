@@ -34,19 +34,17 @@ public class MainActivity extends AppCompatActivity {
     Question q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, currentQ;
     Question[] questions;
     MediaPlayer toBePlayed;
-    FirebaseDatabase database;
-    DatabaseReference myRef;
     private SharedPreferences mySharedPreferences;
-    private String spFilename = "org.pattersonclippers.sharedpreferencesjjc";
+    private String spFilename = "org.pattersonclippers.riddlequizappjjc.QuizScore";
     private final String COLOR_KEY = "color";
     private final String UN_KEY = "username";
 
-    final String TAG = "IAMATAGPLS";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         //initialise shared preferences
         mySharedPreferences = getSharedPreferences(spFilename, MODE_PRIVATE);
 
@@ -65,9 +63,6 @@ public class MainActivity extends AppCompatActivity {
         currentIndex = 0;
         score = 0;
         hintsUsed = 0;
-        int duration = Toast.LENGTH_SHORT;
-        Toast t = Toast.makeText(getApplicationContext(), theme, duration);
-        t.show();
 
         q1 = new Question(getString(R.string.q1text), getString(R.string.q1Ans), R.raw.bgm1);
         q2 = new Question(getString(R.string.q2text), getString(R.string.q2Ans), R.raw.bgm2);
@@ -98,27 +93,6 @@ public class MainActivity extends AppCompatActivity {
             hintBTN.setBackgroundColor(getResources().getColor(R.color.riddle_hintbtn));
             enterBTN.setBackgroundColor(getResources().getColor(R.color.riddle_enterbtn));
         }
-
-        // Write a message to the database
-        database = FirebaseDatabase.getInstance();
-        myRef = database.getReference("message");
-
-        // Read from the database
-        myRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                // This method is called once with the initial value and again
-                // whenever data at this location is updated.
-                String value = dataSnapshot.getValue(String.class);
-                Log.d(TAG, "Value is: " + value);
-            }
-
-            @Override
-            public void onCancelled(DatabaseError error) {
-                // Failed to read value
-                Log.w(TAG, "Failed to read value.", error.toException());
-            }
-        });
 
         toBePlayed = MediaPlayer.create(MainActivity.this, R.raw.bgm1);
         toBePlayed.start();

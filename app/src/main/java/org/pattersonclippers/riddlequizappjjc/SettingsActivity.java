@@ -16,14 +16,13 @@ import android.widget.TextView;
 public class SettingsActivity extends AppCompatActivity {
 
     Button saveBTN, startBTN, riddlethemeBTN, gloomythemeBTN;
-    String initialName;
-    int initialColor;
+    String initialName, theme;
     TextView greetingTV;
     EditText usernameET;
     LinearLayout backgroundLL;
     private SharedPreferences mySharedPreferences;
     SharedPreferences.Editor preferencesEditor;
-    private String spFilename = "org.pattersonclippers.sharedpreferencesjjc";
+    private String spFilename = "org.pattersonclippers.riddlequizappjjc.QuizScore";
     private final String COLOR_KEY = "color";
     private final String UN_KEY = "username";
 
@@ -37,7 +36,7 @@ public class SettingsActivity extends AppCompatActivity {
         preferencesEditor = mySharedPreferences.edit();
 
         //read initial value for color from last time
-        initialColor = mySharedPreferences.getInt(COLOR_KEY, 0);
+        theme = mySharedPreferences.getString(COLOR_KEY, "default");
         initialName = mySharedPreferences.getString(UN_KEY, "player");
 
         saveBTN = (Button) findViewById(R.id.saveBTN);
@@ -49,7 +48,7 @@ public class SettingsActivity extends AppCompatActivity {
         usernameET = (EditText) findViewById(R.id.usernameET);
 
         //shows the color
-        if(initialColor == R.color.riddle_bg){
+        if(theme.equals("riddle")){
             backgroundLL.setBackgroundColor(getResources().getColor(R.color.riddle_bg));
             greetingTV.setTextColor(getResources().getColor(R.color.riddle_qtextcolor));
             startBTN.setBackgroundColor(getResources().getColor(R.color.riddle_hintbtn));
@@ -57,7 +56,7 @@ public class SettingsActivity extends AppCompatActivity {
             saveBTN.setBackgroundColor(getResources().getColor(R.color.riddle_hintbtn));
             saveBTN.setTextColor(getResources().getColor(R.color.def_txt));
             usernameET.setHintTextColor(getResources().getColor(R.color.riddle_edittext));
-        } else if (initialColor == R.color.gloomy_bg) {
+        } else if (theme.equals("gloomy")) {
             backgroundLL.setBackgroundColor(getResources().getColor(R.color.gloomy_bg));
             greetingTV.setTextColor(getResources().getColor(R.color.gloomy_questionbg));
             startBTN.setBackgroundColor(getResources().getColor(R.color.gloomy_hintbtn));
@@ -88,7 +87,7 @@ public class SettingsActivity extends AppCompatActivity {
                 saveBTN.setBackgroundColor(getResources().getColor(R.color.riddle_hintbtn));
                 saveBTN.setTextColor(getResources().getColor(R.color.def_txt));
                 usernameET.setHintTextColor(getResources().getColor(R.color.riddle_edittext));
-                String theme = "riddle";
+                theme = "riddle";
                 preferencesEditor.putString(COLOR_KEY, theme);
                 preferencesEditor.apply();
             }
@@ -104,7 +103,7 @@ public class SettingsActivity extends AppCompatActivity {
                 saveBTN.setBackgroundColor(getResources().getColor(R.color.gloomy_hintbtn));
                 saveBTN.setTextColor(getResources().getColor(R.color.def_txt));
                 usernameET.setHintTextColor(getResources().getColor(R.color.gloomy_enterbtn));
-                String theme = "gloomy";
+                theme = "gloomy";
                 preferencesEditor.putString(COLOR_KEY, theme);
                 preferencesEditor.apply();
             }

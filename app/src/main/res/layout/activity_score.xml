@@ -5,13 +5,15 @@
     android:layout_height="match_parent"
     android:background="#24445C"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:id="@+id/scorebgLL" >
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:id="@+id/greetingLL" >
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -33,6 +35,8 @@
                     android:layout_height="1dp" />
 
                 <TextView
+
+                    android:id="@+id/greetingTV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
@@ -58,27 +62,20 @@
         android:layout_height="15pt" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#5C141414"
-        android:gravity="center"
-        android:orientation="vertical">
-
-    </LinearLayout>
-
-    <LinearLayout
         android:layout_width="343dp"
         android:layout_height="128dp"
         android:background="#6F8B9B"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:id="@+id/yourcountLL" >
 
         <LinearLayout
             android:layout_width="114dp"
             android:layout_height="wrap_content"
             android:background="#77355B6C"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/yourscoreLL" >
 
             <TextView
                 android:layout_width="wrap_content"
@@ -108,7 +105,8 @@
             android:layout_height="wrap_content"
             android:background="#77355B6C"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/yourhintLL" >
 
             <TextView
                 android:layout_width="wrap_content"
@@ -139,7 +137,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:id="@+id/compareLL" >
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -161,6 +160,7 @@
                     android:layout_height="1dp" />
 
                 <TextView
+                    android:id="@+id/compareTV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
@@ -186,14 +186,16 @@
         android:layout_height="128dp"
         android:background="#6F8B9B"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:id="@+id/othercountLL" >
 
         <LinearLayout
             android:layout_width="114dp"
             android:layout_height="wrap_content"
             android:background="#77355B6C"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/otherscoreLL" >
 
             <TextView
                 android:layout_width="wrap_content"
@@ -223,7 +225,8 @@
             android:layout_height="wrap_content"
             android:background="#77355B6C"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/otherhintLL" >
 
             <TextView
                 android:layout_width="wrap_content"
@@ -257,6 +260,22 @@
         android:fontFamily="sans-serif-condensed"
         android:gravity="center"
         android:text="Wanna do something cool?\nClick me!"
+        android:textColor="#FF121212"
+        android:textSize="8pt"
+        app:backgroundTint="#6F8B9B"
+        app:cornerRadius="0dp" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="4pt" />
+
+    <Button
+        android:id="@+id/highscoreBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Come look at high scores! :D"
         android:textColor="#FF121212"
         android:textSize="8pt"
         app:backgroundTint="#6F8B9B"
