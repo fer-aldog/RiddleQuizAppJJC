@@ -4,7 +4,7 @@
     <string name="correctMsg">You got it right!</string>
     <string name="wrongMsg">You got it wrong :(</string>
     <string name="hintText">The answer is</string>
-    <string name="greet">welcome to the void of nothingness\nenjoy your stay :)</string>
+    <string name="greet">welcome to the void of nothingness,\nplayer! enjoy your stay :)</string>
     <string name="warn">The user is responsible for any mishaps that\nhappens in this dimension.</string>
     <string name="prevscore">Compare score with the previous player!</string>
 

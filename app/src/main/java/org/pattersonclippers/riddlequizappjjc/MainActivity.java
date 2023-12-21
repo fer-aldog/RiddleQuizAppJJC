@@ -79,15 +79,15 @@ public class MainActivity extends AppCompatActivity {
 
         if(theme.equals("gloomy")) {
             mainbackgroundLL.setBackgroundColor(getResources().getColor(R.color.gloomy_bg));
-            qtextbgLL.setBackgroundColor(getResources().getColor(R.color.gloomy_questionbg));
+            qtextbgLL.setBackgroundColor(getResources().getColor(R.color.gloomy_textbg));
             questionTV.setTextColor(getResources().getColor(R.color.gloomy_qtextcolor));
             answerET.setHintTextColor(getResources().getColor(R.color.gloomy_edittext));
-            hintBTN.setBackgroundColor(getResources().getColor(R.color.gloomy_hintbtn));
-            enterBTN.setBackgroundColor(getResources().getColor(R.color.gloomy_enterbtn));
+            hintBTN.setBackgroundColor(getResources().getColor(R.color.gloomy_textbg));
+            enterBTN.setBackgroundColor(getResources().getColor(R.color.gloomy_textbg));
         }
         if(theme.equals("riddle")) {
             mainbackgroundLL.setBackgroundColor(getResources().getColor(R.color.riddle_bg));
-            qtextbgLL.setBackgroundColor(getResources().getColor(R.color.riddle_questionbg));
+            qtextbgLL.setBackgroundColor(getResources().getColor(R.color.riddle_textbg));
             questionTV.setTextColor(getResources().getColor(R.color.riddle_qtextcolor));
             answerET.setHintTextColor(getResources().getColor(R.color.riddle_edittext));
             hintBTN.setBackgroundColor(getResources().getColor(R.color.riddle_hintbtn));

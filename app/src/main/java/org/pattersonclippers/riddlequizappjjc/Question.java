@@ -9,7 +9,6 @@ public class Question {
         correctAnswer = "Mreow.";
         bgm = R.raw.bgm1;
     }
-
     public Question(String newQText, String newCorrectAnswer, int newBGM) {
         qText = newQText;
         correctAnswer = newCorrectAnswer;
@@ -19,7 +18,6 @@ public class Question {
     public String getQText() { return qText; }
     public String getCorrectAnswer() { return correctAnswer; }
     public int getBGM() {return bgm; }
-
     public void setQText(String newQText) { qText = newQText; }
     public void setCorrectAnswer(String newAnswer) { correctAnswer = newAnswer; }
     public void setBGM(int newMusic) { bgm = newMusic; }

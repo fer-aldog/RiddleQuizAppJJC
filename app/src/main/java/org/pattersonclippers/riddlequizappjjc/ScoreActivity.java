@@ -23,8 +23,8 @@ public class ScoreActivity extends AppCompatActivity {
     int score, hintsUsed;
     Button coolBTN, highscoreBTN;
     String theme, initialName;
-    LinearLayout scorebgLL, greetingLL, yourcountLL,yourscoreLL, yourhintLL, compareLL,
-            othercountLL, otherscoreLL, otherhintLL;
+    LinearLayout scorebgLL, greetingLL, yourscoreLL, yourhintLL, compareLL,
+            otherscoreLL, otherhintLL;
 
     private SharedPreferences mySharedPreferences;
     SharedPreferences.Editor preferencesEditor;
@@ -63,11 +63,9 @@ public class ScoreActivity extends AppCompatActivity {
 
         scorebgLL = (LinearLayout) findViewById(R.id.scorebgLL);
         greetingLL = (LinearLayout) findViewById(R.id.greetingLL);
-        yourcountLL = (LinearLayout) findViewById(R.id.yourcountLL);
         yourscoreLL = (LinearLayout) findViewById(R.id.yourscoreLL);
         yourhintLL = (LinearLayout) findViewById(R.id.yourhintLL);
         compareLL = (LinearLayout) findViewById(R.id.compareLL);
-        othercountLL = (LinearLayout) findViewById(R.id.othercountLL);
         otherscoreLL = (LinearLayout) findViewById(R.id.otherscoreLL);
         otherhintLL = (LinearLayout) findViewById(R.id.otherhintLL);
 
@@ -92,29 +90,32 @@ public class ScoreActivity extends AppCompatActivity {
         database = FirebaseDatabase.getInstance();
         myRef = database.getReference("highscores");
 
-
-        /*if(theme.equals("gloomy")) {
-            scorebgLL.setBackgroundColor(getResources().getColor(R.color.gloomy_scorebg));
+        if(theme.equals("gloomy")) {
+            scorebgLL.setBackgroundColor(getResources().getColor(R.color.gloomy_bg));
             greetingLL.setBackgroundColor(getResources().getColor(R.color.gloomy_textbg));
-            yourcountLL.setBackgroundColor(getResources().getColor(R.color.gloomy_textbg));
-            yourscoreLL.setBackgroundColor(getResources().getColor(R.color.gloomy_countwindow));
-            yourhintLL.setBackgroundColor(getResources().getColor(R.color.gloomy_countwindow));
             compareLL.setBackgroundColor(getResources().getColor(R.color.gloomy_textbg));
-            othercountLL.setBackgroundColor(getResources().getColor(R.color.gloomy_textbg));
-            otherscoreLL.setBackgroundColor(getResources().getColor(R.color.gloomy_countwindow));
-            otherhintLL.setBackgroundColor(getResources().getColor(R.color.gloomy_countwindow));
-            greetingTV.setTextColor(getResources().getColor(R.color.gloomy_textcolor));
-            compareTV.setTextColor(getResources().getColor(R.color.gloomy_textcolor));
 
+            yourscoreLL.setBackgroundColor(getResources().getColor(R.color.gloomy_textbg));
+            yourhintLL.setBackgroundColor(getResources().getColor(R.color.gloomy_textbg));
+            otherscoreLL.setBackgroundColor(getResources().getColor(R.color.gloomy_textbg));
+            otherhintLL.setBackgroundColor(getResources().getColor(R.color.gloomy_textbg));
+
+            coolBTN.setBackgroundColor(getResources().getColor(R.color.gloomy_textbg));
+            highscoreBTN.setBackgroundColor(getResources().getColor(R.color.gloomy_textbg));
         }
         if(theme.equals("riddle")) {
-            mainbackgroundLL.setBackgroundColor(getResources().getColor(R.color.riddle_bg));
-            qtextbgLL.setBackgroundColor(getResources().getColor(R.color.riddle_questionbg));
-            questionTV.setTextColor(getResources().getColor(R.color.riddle_qtextcolor));
-            answerET.setHintTextColor(getResources().getColor(R.color.riddle_edittext));
-            hintBTN.setBackgroundColor(getResources().getColor(R.color.riddle_hintbtn));
-            enterBTN.setBackgroundColor(getResources().getColor(R.color.riddle_enterbtn));
-        }*/
+            scorebgLL.setBackgroundColor(getResources().getColor(R.color.riddle_scorebg));
+            greetingLL.setBackgroundColor(getResources().getColor(R.color.riddle_textbg));
+            compareLL.setBackgroundColor(getResources().getColor(R.color.riddle_textbg));
+
+            yourscoreLL.setBackgroundColor(getResources().getColor(R.color.riddle_textbg));
+            yourhintLL.setBackgroundColor(getResources().getColor(R.color.riddle_textbg));
+            otherscoreLL.setBackgroundColor(getResources().getColor(R.color.riddle_textbg));
+            otherhintLL.setBackgroundColor(getResources().getColor(R.color.riddle_textbg));
+
+            coolBTN.setBackgroundColor(getResources().getColor(R.color.riddle_textbg));
+            highscoreBTN.setBackgroundColor(getResources().getColor(R.color.riddle_textbg));
+        }
 
         coolBTN.setOnClickListener(new View.OnClickListener() {
             @Override

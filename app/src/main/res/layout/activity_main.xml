@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#335157"
+    android:background="#FFF1E39F"
     android:gravity="center"
     android:id="@+id/mainbackgroundLL"
     android:orientation="vertical">
@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#9ACDCDCD"
+        android:background="#FFC1A36D"
         android:orientation="vertical"
         android:id="@+id/qtextbgLL">
 
@@ -35,7 +35,7 @@
                 android:fontFamily="sans-serif-black"
                 android:gravity="center"
                 android:text="@string/q1text"
-                android:textColor="#373737"
+                android:textColor="#FF5D423D"
                 android:textSize="20sp" />
 
             <Space
@@ -62,7 +62,7 @@
             android:id="@+id/hintBTN"
             android:layout_width="36dp"
             android:layout_height="match_parent"
-            app:backgroundTint="#838383"
+            app:backgroundTint="#FFC34747"
             app:cornerRadius="0dp"
             app:icon="@android:drawable/ic_menu_search"
             app:iconGravity="textEnd"
@@ -77,10 +77,10 @@
             android:layout_width="211dp"
             android:layout_height="wrap_content"
             android:width="172sp"
-            android:fontFamily="sans-serif-condensed-light"
+            android:fontFamily="sans-serif-condensed-medium"
             android:gravity="center"
             android:hint="@string/answerET"
-            android:textColorHint="#FFEEEBEC"
+            android:textColorHint="#FF502E1D"
             android:textSize="15dp" />
 
 
@@ -95,8 +95,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ENTER"
-        android:textColor="#FFEEEBEC"
-        app:backgroundTint="#6C6C6C"
+        android:textColor="#FF121212"
+        app:backgroundTint="#FFAF3131"
         app:cornerRadius="0dp" />
 
 </LinearLayout>

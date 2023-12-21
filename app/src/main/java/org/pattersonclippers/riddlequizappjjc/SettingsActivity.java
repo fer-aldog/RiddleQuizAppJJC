@@ -58,12 +58,12 @@ public class SettingsActivity extends AppCompatActivity {
             usernameET.setHintTextColor(getResources().getColor(R.color.riddle_edittext));
         } else if (theme.equals("gloomy")) {
             backgroundLL.setBackgroundColor(getResources().getColor(R.color.gloomy_bg));
-            greetingTV.setTextColor(getResources().getColor(R.color.gloomy_questionbg));
-            startBTN.setBackgroundColor(getResources().getColor(R.color.gloomy_hintbtn));
+            greetingTV.setTextColor(getResources().getColor(R.color.gloomy_textbg));
+            startBTN.setBackgroundColor(getResources().getColor(R.color.gloomy_textbg));
             startBTN.setTextColor(getResources().getColor(R.color.def_txt));
-            saveBTN.setBackgroundColor(getResources().getColor(R.color.gloomy_hintbtn));
+            saveBTN.setBackgroundColor(getResources().getColor(R.color.gloomy_textbg));
             saveBTN.setTextColor(getResources().getColor(R.color.def_txt));
-            usernameET.setHintTextColor(getResources().getColor(R.color.gloomy_enterbtn));
+            usernameET.setHintTextColor(getResources().getColor(R.color.gloomy_textbg));
         } else {
             backgroundLL.setBackgroundColor(getResources().getColor(R.color.def_bg));
             greetingTV.setTextColor(getResources().getColor(R.color.def_txt));
@@ -97,12 +97,12 @@ public class SettingsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 backgroundLL.setBackgroundColor(getResources().getColor(R.color.gloomy_bg));
-                greetingTV.setTextColor(getResources().getColor(R.color.gloomy_questionbg));
-                startBTN.setBackgroundColor(getResources().getColor(R.color.gloomy_hintbtn));
+                greetingTV.setTextColor(getResources().getColor(R.color.gloomy_textbg));
+                startBTN.setBackgroundColor(getResources().getColor(R.color.gloomy_textbg));
                 startBTN.setTextColor(getResources().getColor(R.color.def_txt));
-                saveBTN.setBackgroundColor(getResources().getColor(R.color.gloomy_hintbtn));
+                saveBTN.setBackgroundColor(getResources().getColor(R.color.gloomy_textbg));
                 saveBTN.setTextColor(getResources().getColor(R.color.def_txt));
-                usernameET.setHintTextColor(getResources().getColor(R.color.gloomy_enterbtn));
+                usernameET.setHintTextColor(getResources().getColor(R.color.gloomy_textbg));
                 theme = "gloomy";
                 preferencesEditor.putString(COLOR_KEY, theme);
                 preferencesEditor.apply();
@@ -127,7 +127,5 @@ public class SettingsActivity extends AppCompatActivity {
                 startActivity(myIntent);
             }
         });
-
-
     }
 }

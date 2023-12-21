@@ -4,7 +4,7 @@
     <string name="correctMsg">Uy, natama ka :^)</string>
     <string name="wrongMsg">Nganong namali man ka?</string>
     <string name="hintText">Ang tamang tubag kay</string>
-    <string name="greet">maayong pag-abot sa wala lang gyud!\nenjoy your stay :)</string>
+    <string name="greet">maayong pag-abot sa wala lang gyud,\nplayer! enjoy your stay :)</string>
     <string name="warn">Ang user ang responsable sa mga sakunang\nmahitabo aning dimensyon.</string>
     <string name="prevscore">Ikumpara imong puntos sa kanhiang player!</string>
 
