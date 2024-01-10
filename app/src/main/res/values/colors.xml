@@ -22,5 +22,6 @@
     <color name="gloomy_textbg">#FF6F8B9B</color>
     <color name="gloomy_qtextcolor">#121212</color>
     <color name="gloomy_edittext">#FFD8D8D8</color>
+    <color name="gloomy_hinttxt">#FF502E1D</color>
 
 </resources>

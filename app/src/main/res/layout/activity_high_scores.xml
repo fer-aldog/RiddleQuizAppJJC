@@ -89,7 +89,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
                     android:gravity="center"
-                    android:text="000"
+                    android:text="0%"
                     android:textColor="#121212"
                     android:textSize="12pt" />
 
@@ -117,10 +117,10 @@
                 <TextView
                     android:id="@+id/highScore2TV"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:fontFamily="sans-serif-condensed"
                     android:gravity="center"
-                    android:text="000"
+                    android:text="0%"
                     android:textColor="#121212"
                     android:textSize="12pt" />
 
@@ -151,7 +151,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
                     android:gravity="center"
-                    android:text="000"
+                    android:text="0%"
                     android:textColor="#121212"
                     android:textSize="12pt" />
 
@@ -182,7 +182,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
                     android:gravity="center"
-                    android:text="000"
+                    android:text="0%"
                     android:textColor="#121212"
                     android:textSize="12pt" />
 
@@ -213,7 +213,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
                     android:gravity="center"
-                    android:text="000"
+                    android:text="0%"
                     android:textColor="#121212"
                     android:textSize="12pt" />
 

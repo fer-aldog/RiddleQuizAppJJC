@@ -1,40 +1,97 @@
 <resources>
     <string name="app_name">RiddleQuizAppJJC</string>
+
+    <string name="menuplaceholder">Kumusta, player?\nPindota ang start button para magsugod.\nPwede pud nimo ibahin ang kolory\n ug bilang sa mga tigmo sa dula.</string>
+    <string name="menugreet1">Kumusta,</string>
+    <string name="menugreet2">\?\nI-click ang start button para magsimula.\nPwede mo ding ibahin ang kulay\n at bilang ng mga bugtong ng larong ito.</string>
+
+    <string name="scoreplaceholder">maayong pag-abot sa wala lang gyud,\nplayer! enjoy your stay :)</string>
+    <string name="scoregreet1">maayong pag-abot sa wala lang gyud,\n</string>
+    <string name="scoregreet2">! enjoy your stay :)</string>
+
     <string name="answerET">Itype imong tubag dinhi.</string>
     <string name="correctMsg">Uy, natama ka :^)</string>
-    <string name="wrongMsg">Nganong namali man ka?</string>
-    <string name="hintText">Ang tamang tubag kay</string>
-    <string name="greet">maayong pag-abot sa wala lang gyud,\nplayer! enjoy your stay :)</string>
+    <string name="wrongMsg">Nganong namali man ka? Ang tubag kay:</string>
     <string name="warn">Ang user ang responsable sa mga sakunang\nmahitabo aning dimensyon.</string>
     <string name="prevscore">Ikumpara imong puntos sa kanhiang player!</string>
 
     <string name="q1text">Pwede ni himuon sa mga bata, pero di\nnila makitan o magunitan.</string>
+    <string name="q1hint">Kusog nga tingog nga makalagot\no makadistorbo.</string>
     <string name="q1Ans">Saba</string>
 
     <string name="q2text">Asa ang Huwebes mauna kaysa\nsa Biyernes?</string>
+    <string name="q2hint">Usa ka libro nga puno ug mga kahulugan\nsa mga pulong, gihan-ay sa alpabeto.</string>
     <string name="q2Ans">Diksiyonaryo</string>
 
     <string name="q3text">Unsay naay liog pero walay ulo?</string>
+    <string name="q3hint">Ginagamit ni pangsulod ug tubig\no ubang mga likido.</string>
     <string name="q3Ans">Botelya</string>
 
     <string name="q4text">Unsay maguba kung ingnon nimo\niyang pangalan?</string>
+    <string name="q4hint">Mao ni ang katugbang sa kasaba.</string>
     <string name="q4Ans">Kahilom</string>
 
     <string name="q5text">Kung naa kay ilabog nga batong asul sa\nRed Sea, unsay mahitabo ani?</string>
+    <string name="q5hint">Unsay tawag sa taong maulanan?</string>
     <string name="q5Ans">Mabasa</string>
 
     <string name="q6text">Kinsay nikasal ug daghang babae pero\nwala pa gikasal?</string>
+    <string name="q6hint">Tao nga nagtrabaho sa simbahan.</string>
     <string name="q6Ans">Pari</string>
 
     <string name="q7text">Unsang keso ang gihimo pabaliktad?</string>
+    <string name="q7hint">Isuwat and pulong nga \'gihimo\' pabaliktad.</string>
     <string name="q7Ans">Omihig</string>
 
     <string name="q8text">Mulupad kos tibuok adlaw pero di\nko muhawa sa akong pwesto.</string>
+    <string name="q8hint">Kani ang nagrepresentar sa usang nasod.\nNaa ang tanang nasod ani.</string>
     <string name="q8Ans">Bandila</string>
 
     <string name="q9text">Unsay makuha nimo pero di nimo\nmalabog?</string>
+    <string name="q9hint">Usang sakit nga ang sintomas kay\nubo, nasal congestion, o hatsing.</string>
     <string name="q9Ans">Sip-on</string>
 
     <string name="q10text">Naa ang tanan ani pero di nila mawala.</string>
+    <string name="q10hint">Makit-an kung musiga ang adlaw sa imo.</string>
     <string name="q10Ans">Anino</string>
+
+    <string name="q11text">Naa koy mga buslot pero makasulod\ngihapon ko\'g tubig.</string>
+    <string name="q11hint">Gamiton panghugas ug mga plato.</string>
+    <string name="q11Ans">Sponge</string>
+
+    <string name="q12text">Makahimo ko ug duha nga tao\ngikan sa isa.</string>
+    <string name="q12hint">Gamiton pang-touch up sa make-up.</string>
+    <string name="q12Ans">Samin</string>
+
+    <string name="q13text">Ginatubag ko nimo, bisag wala koy\ngipangutana nimo.</string>
+    <string name="q13hint">Isa sa mga pinakasikat nga giimbento\nni Alexander Graham Bell pangsturya.</string>
+    <string name="q13Ans">Telepono</string>
+
+    <string name="q14text">Ako ang imong gisulbad karon.</string>
+    <string name="q14hint">Unsang klaseng pangutana ang\nnaa aning app?</string>
+    <string name="q14Ans">Tigmo</string>
+
+    <string name="q15text">Unsay kasagari iuli, pero dili hulmon?</string>
+    <string name="q15hint">Usa ka seven-lettered word nga\ningnon sa taong nakatabang nimo.</string>
+    <string name="q15Ans">Salamat</string>
+
+    <string name="q16text">Unsay puno sa tibuok adlaw ug\nwalay sulod sa gabii?</string>
+    <string name="q16hint">Unsay ginasuot nimo sa imong\ntiil paglakaw?</string>
+    <string name="q16Ans">Sapatos</string>
+
+    <string name="q17text">Unsay pirme magtapos sa tanan?</string>
+    <string name="q17hint">Tanawa ang katapusang letra sa \'tanan\'.</string>
+    <string name="q17Ans">N</string>
+
+    <string name="q18text">Unsay wala silang Adam ug Eve\nnga ang tanan naa?</string>
+    <string name="q18hint">Unsay tawag sa inahan ug amahan?</string>
+    <string name="q18Ans">Ginikanan</string>
+
+    <string name="q19text">Naa ang pobre ani. Kailangan ang\nmga dato ani. Kung kaonon\nnimo ni, mamatay ka.</string>
+    <string name="q19hint">Katugbang sa naa.</string>
+    <string name="q19Ans">Wala</string>
+
+    <string name="q20text">Unsay naa ang mga iring nga wala\nang ubang hayop?</string>
+    <string name="q20hint">Unsay tawag sa anak sa iring?</string>
+    <string name="q20Ans">Kuting</string>
 </resources>

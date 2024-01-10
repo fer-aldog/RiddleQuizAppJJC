@@ -1,40 +1,99 @@
 <resources>
     <string name="app_name">RiddleQuizAppJJC</string>
+
+    <string name="menuplaceholder">Welcome, player!\nPress the start button to begin.\nYou can also change the color\nscheme of this game.</string>
+    <string name="menugreet1">Welcome,</string>
+    <string name="menugreet2">!\nPress the start button to begin.\nYou can also change the color\nscheme of this game.</string>
+
+    <string name="scoreplaceholder">welcome to the void of nothingness,\nplayer! enjoy your stay :)</string>
+    <string name="scoregreet1">welcome to the void of nothingness,\n</string>
+    <string name="scoregreet2">! enjoy your stay :)</string>
+
     <string name="answerET">Type your answer here.</string>
     <string name="correctMsg">You got it right!</string>
-    <string name="wrongMsg">You got it wrong :(</string>
-    <string name="hintText">The answer is</string>
-    <string name="greet">welcome to the void of nothingness,\nplayer! enjoy your stay :)</string>
+    <string name="wrongMsg">You got it wrong :( the answer is:</string>
     <string name="warn">The user is responsible for any mishaps that\nhappens in this dimension.</string>
     <string name="prevscore">Compare score with the previous player!</string>
 
     <string name="q1text">Kids can make it, but never hold it\nor see it.</string>
+    <string name="q1hint">A loud sound that is unpleasant or\ncauses disturbance.</string>
     <string name="q1Ans">Noise</string>
 
     <string name="q2text">Where does Thursday come after Friday?</string>
+    <string name="q2hint">A book filled with definitions of\nwords, arranged alphabetically.</string>
     <string name="q2Ans">Dictionary</string>
 
     <string name="q3text">What has a neck but no body?</string>
+    <string name="q3hint">A container used to store\nwater or other liquids in.</string>
     <string name="q3Ans">Bottle</string>
 
     <string name="q4text">What breaks when you say its name?</string>
+    <string name="q4hint">It is the complete absence of sound.</string>
     <string name="q4Ans">Silence</string>
 
     <string name="q5text">If you throw a blue stone into the\nRed Sea, what will it become?</string>
+    <string name="q5hint">A synonym of \'drenched\'.</string>
     <string name="q5Ans">Wet</string>
 
     <string name="q6text">Who has married many women but\nwas never married?</string>
+    <string name="q6hint">Someone who works in the church.</string>
     <string name="q6Ans">Priest</string>
 
     <string name="q7text">What type of cheese is made backward?</string>
+    <string name="q7hint">Spell the word \'made\' backwards.</string>
     <string name="q7Ans">Edam</string>
 
     <string name="q8text">I fly all day but stay in the same spot.</string>
+    <string name="q8hint">This item is what represents a country.\nEvery country has this.</string>
     <string name="q8Ans">Flag</string>
 
     <string name="q9text">What can you catch but not throw?</string>
+    <string name="q9hint">A sickness whose symptoms can be\nsneezing, a runny nose, or coughing.</string>
     <string name="q9Ans">A cold</string>
 
     <string name="q10text">Everyone has it and no one can lose it.</string>
+    <string name="q10hint">You can see it when the sun\nshines at you.</string>
     <string name="q10Ans">Shadow</string>
+
+    <string name="q11text">I have holes yet I can hold water.</string>
+    <string name="q11hint">What you use to scrub dishes.</string>
+    <string name="q11Ans">Sponge</string>
+
+    <string name="q12text">I make two people out of one.</string>
+    <string name="q12hint">You can look into this when\nfixing up make-up.</string>
+    <string name="q12Ans">Mirror</string>
+
+    <string name="q13text">You answer me, although I never\nask you questions.</string>
+    <string name="q13hint">One of Alexander Graham Bell’s\nmost famous inventions\nfor communicating.</string>
+    <string name="q13Ans">Telephone</string>
+
+    <string name="q14text">I am what you are currently solving.</string>
+    <string name="q14hint">What type of questions are in this app?</string>
+    <string name="q14Ans">Riddle</string>
+
+    <string name="q15text">What is often returned, but\nnever borrowed?</string>
+    <string name="q15hint">A six-letter word you tell someone\nafter they give you a gift.</string>
+    <string name="q15Ans">Thanks</string>
+
+    <string name="q16text">What is full all day and empty at night?</string>
+    <string name="q16hint">What do you wear on your feet?</string>
+    <string name="q16Ans">Shoes</string>
+
+    <string name="q17text">What always ends everything?</string>
+    <string name="q17hint">Look at the last letter of \'everything\'.</string>
+    <string name="q17Ans">G</string>
+
+    <string name="q18text">What didn\'t Adam and Eve have that\neveryone else has?</string>
+    <string name="q18hint">What is a mother and a father\ncalled together?</string>
+    <string name="q18Ans">Parents</string>
+
+    <string name="q19text">Poor people have it. Rich people need it.\nIf you eat it, you die.</string>
+    <string name="q19hint">The opposite of something.</string>
+    <string name="q19Ans">Nothing</string>
+
+    <string name="q20text">What does a cat have that no\nother animal has?</string>
+    <string name="q20hint">What do you call baby cats?</string>
+    <string name="q20Ans">Kittens</string>
+
+
 </resources>

@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.content.Intent;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -16,10 +17,12 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 
 public class HighScoresActivity extends AppCompatActivity {
+
+    Intent incomingIntent;
+    int totalQs;
 
     TextView highScore1TV, highScore2TV, highScore3TV, highScore4TV, highScore5TV,
             theScorer1TV, theScorer2TV, theScorer3TV, theScorer4TV, theScorer5TV;
@@ -53,6 +56,9 @@ public class HighScoresActivity extends AppCompatActivity {
         myRef = database.getReference("highscores");
 
         allHighScores = new ArrayList<HighScore>();
+
+        incomingIntent = getIntent();
+        totalQs = incomingIntent.getIntExtra("totalQs", 0);
 
         highscoreLL = (LinearLayout) findViewById(R.id.highscoreLL);
         titlebgLL = (LinearLayout) findViewById(R.id.titlebgLL);
@@ -110,7 +116,7 @@ public class HighScoresActivity extends AppCompatActivity {
                     //Get the first player
                     HighScore firstPlayer = allHighScores.get(currentIndex);
                     theScorer1TV.setText(firstPlayer.getName());
-                    highScore1TV.setText("" + firstPlayer.getScore());
+                    highScore1TV.setText(firstPlayer.getPercent() + "%");
 
                 }
                 //Check if we have more than 1 player
@@ -118,25 +124,25 @@ public class HighScoresActivity extends AppCompatActivity {
                     currentIndex++;
                     HighScore nextPlayer = allHighScores.get(currentIndex);
                     theScorer2TV.setText(nextPlayer.getName());
-                    highScore2TV.setText("" + nextPlayer.getScore());
+                    highScore2TV.setText(nextPlayer.getPercent() + "%");
                 }
                 if (allHighScores.size() > 2) {
                     currentIndex++;
                     HighScore nextPlayer = allHighScores.get(currentIndex);
                     theScorer3TV.setText(nextPlayer.getName());
-                    highScore3TV.setText("" + nextPlayer.getScore());
+                    highScore3TV.setText(nextPlayer.getPercent() + "%");
                 }
                 if (allHighScores.size() > 3) {
                     currentIndex++;
                     HighScore nextPlayer = allHighScores.get(currentIndex);
                     theScorer4TV.setText(nextPlayer.getName());
-                    highScore4TV.setText("" + nextPlayer.getScore());
+                    highScore4TV.setText(nextPlayer.getPercent() + "%");
                 }
                 if (allHighScores.size() > 4) {
                     currentIndex++;
                     HighScore nextPlayer = allHighScores.get(currentIndex);
                     theScorer5TV.setText(nextPlayer.getName());
-                    highScore5TV.setText("" + nextPlayer.getScore());
+                    highScore5TV.setText(nextPlayer.getPercent() + "%");
                 }
 
             }

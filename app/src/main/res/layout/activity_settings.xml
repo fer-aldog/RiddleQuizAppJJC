@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
-        android:text="Welcome, player!\nPress the start button to begin.\nYou can also change the color\nscheme of this game."
+        android:text="@string/menuplaceholder"
         android:textColor="#000000"
         android:textSize="18dp" />
 
@@ -79,6 +79,68 @@
             android:textSize="17sp"
             app:backgroundTint="#951813"
             app:cornerRadius="10sp" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="12dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/q5sBTN"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textColor="#A9DD56"
+            android:textSize="17sp"
+            app:backgroundTint="#29700B"
+            app:cornerRadius="5sp" />
+
+        <Space
+            android:layout_width="25dp"
+            android:layout_height="1dp" />
+
+        <Button
+            android:id="@+id/q10sBTN"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textColor="#A9DD56"
+            android:textSize="17sp"
+            app:backgroundTint="#29700B"
+            app:cornerRadius="5sp" />
+
+        <Space
+            android:layout_width="25dp"
+            android:layout_height="1dp" />
+
+        <Button
+            android:id="@+id/q15sBTN"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:textColor="#A9DD56"
+            android:textSize="17sp"
+            app:backgroundTint="#29700B"
+            app:cornerRadius="5sp" />
+
+        <Space
+            android:layout_width="25dp"
+            android:layout_height="1dp" />
+
+        <Button
+            android:id="@+id/q20sBTN"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textColor="#A9DD56"
+            android:textSize="17sp"
+            app:backgroundTint="#29700B"
+            app:cornerRadius="5sp" />
     </LinearLayout>
 
     <Space

@@ -1,40 +1,97 @@
 <resources>
     <string name="app_name">RiddleQuizAppJJC</string>
+
+    <string name="menuplaceholder">Maligayang pagdating, player!\nI-click ang start button para magsimula.\nPwede mo ding ibahin ang kulay\n at bilang ng mga bugtong ng larong ito.</string>
+    <string name="menugreet1">Maligayang pagdating,</string>
+    <string name="menugreet2">!\nI-click ang start button para magsimula.\nPwede mo ding ibahin ang kulay\n at bilang ng mga bugtong ng larong ito.</string>
+
+    <string name="scoreplaceholder">maligayang pagdating sa void\nof nothingness, player! enjoy your stay :)</string>
+    <string name="scoregreet1">maligayang pagdating sa void\nof nothingness,</string>
+    <string name="scoregreet2">! enjoy your stay :)</string>
+
     <string name="answerET">Itype mo dito ang sagot.</string>
     <string name="correctMsg">Tama ka :D</string>
-    <string name="wrongMsg">jusme bat ka nagkamali</string>
-    <string name="hintText">Ang tamang sagot ay</string>
-    <string name="greet">player, maligayang pagdating sa\nvoid of nothingness! enjoy your stay :)</string>
+    <string name="wrongMsg">jusme bat ka nagkamali, ang sagot ay:</string>
     <string name="warn">Ang user ang responsable sa mga sakunang\nmangyayari sa itong dimensyon.</string>
     <string name="prevscore">Magkumpara kayo sa nakaraang player!</string>
 
     <string name="q1text">Pwede itong gawin ng mga bata, pero\nhindi nila makita o mahawak.</string>
+    <string name="q1hint">Maingay na tunog na nakakainis\no nakakaistorbo.</string>
     <string name="q1Ans">Ingay</string>
 
     <string name="q2text">Saan ang Huwebes nauuna bago\nang Biyernes?</string>
+    <string name="q2hint">Isang aklat na puno ng mga\nkahulugan ng mga salita,\nnakaayos ayon sa alpabeto.</string>
     <string name="q2Ans">Diksiyonaryo</string>
 
     <string name="q3text">Ano ang may leeg pero walang ulo?</string>
+    <string name="q3hint">Ginagamit ito para lagyan ng\ntubig o iba pang likido.</string>
     <string name="q3Ans">Bote</string>
 
     <string name="q4text">Anong nasisira kapag sabihin mo\nang pangalan niya?</string>
+    <string name="q4hint">Ito ang kabaliktaran ng ingay.</string>
     <string name="q4Ans">Katahimikan</string>
 
     <string name="q5text">Kung may ibato kang batong asul sa\nRed Sea, anong mangyayari nito?</string>
+    <string name="q5hint">Kapag maulanan ka, siyempre ikaw ay?</string>
     <string name="q5Ans">Mabasa</string>
 
     <string name="q6text">Sino ang nagkakasal ng madaming\nbabae pero hindi pa kinasal?</string>
+    <string name="q6hint">Taong nagtatrabaho sa simbahan.</string>
     <string name="q6Ans">Pari</string>
 
     <string name="q7text">Anong keso ang gawang baliktad?"</string>
+    <string name="q7hint">Isulat and salitang \'gawang\' pabaliktad.</string>
     <string name="q7Ans">Gnawag</string>
 
     <string name="q8text">Lumilipad ako buong araw pero hindi\nako umaalis sa pwesto ko.</string>
+    <string name="q8hint">Ito ang kumakatawan sa isang\nbansa. Meron ang lahat ng\nbansa nito.</string>
     <string name="q8Ans">Watawat</string>
 
     <string name="q9text">Anong iyong pwedeng makuha pero\nhindi mo mabato?</string>
+    <string name="q9hint">Isang sakit na ang sintomas ay\nubo, nasal congestion, o hatsing.</string>
     <string name="q9Ans">Sipon</string>
 
     <string name="q10text">Mayroon ang lahat nito at hindi\nnila mawala.</string>
+    <string name="q10hint">Nakikita kapag sumikat ang araw sayo.</string>
     <string name="q10Ans">Anino</string>
+
+    <string name="q11text">Mayroon akong butas pero kaya\nkong hawakan ang tubig.</string>
+    <string name="q11hint">Ginagamit pangkuskos ng pinggan.</string>
+    <string name="q11Ans">Sponge</string>
+
+    <string name="q12text">Gumagawa ako ng dalawang tao sa isa.</string>
+    <string name="q12hint">Ginagamit pang-touch up ng make-up.</string>
+    <string name="q12Ans">Salamin</string>
+
+    <string name="q13text">Sinasagot mo ako kahit wala\nakong tinatanong sayo.</string>
+    <string name="q13hint">Isa sa pinakasikat na imbensyon\nni Alexander Graham Bell pang-usap.</string>
+    <string name="q13Ans">Telepono</string>
+
+    <string name="q14text">Ako ang iyong sinasagot ngayon.</string>
+    <string name="q14hint">Anong uring tanong ang nasa app na ito?</string>
+    <string name="q14Ans">Bugtong</string>
+
+    <string name="q15text">Ano ang laging sinasauli, ngunit\nhindi naman hiniram?</string>
+    <string name="q15hint">Isang six-letter word na sinasabi sa\nmga tao pagkatapos silang tulungan.</string>
+    <string name="q15Ans">Salamat</string>
+
+    <string name="q16text">Ano ang puno buong araw at\nwalang laman sa gabi?</string>
+    <string name="q16hint">Ano ang sinusuot mo sa paa\nkapag lumalabas ka?</string>
+    <string name="q16Ans">Sapatos</string>
+
+    <string name="q17text">Ano ang laging nagtatapos sa lahat?</string>
+    <string name="q17hint">Ang huling titik sa salitang \'lahat\'.</string>
+    <string name="q17Ans">T</string>
+
+    <string name="q18text">Ano ang wala sina Adam at Eve\nna meron ang lahat?</string>
+    <string name="q18hint">Ano ang tawag sa ina at ama?</string>
+    <string name="q18Ans">Mga magulang</string>
+
+    <string name="q19text">Meron ang mahirap nito. Kailangan ito\nng mga mayaman. Kung kakainin mo\nito, mamamatay ka.</string>
+    <string name="q19hint">Kasalungat ng meron.</string>
+    <string name="q19Ans">Wala</string>
+
+    <string name="q20text">Anong meron ang mga pusa na\nwala ang ibang hayop?</string>
+    <string name="q20hint">Anong tawag sa batang pusa?</string>
+    <string name="q20Ans">Kuting</string>
 </resources>

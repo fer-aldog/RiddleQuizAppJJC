@@ -40,7 +40,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
                     android:gravity="center"
-                    android:text="@string/greet"
+                    android:text="@string/scoreplaceholder"
                     android:textColor="#121212"
                     android:textSize="8pt" />
 
@@ -94,24 +94,24 @@
             android:layout_height="1dp" />
 
         <LinearLayout
-            android:layout_width="181dp"
+            android:layout_width="121dp"
             android:layout_height="wrap_content"
             android:background="#FFC1A36D"
             android:gravity="center"
             android:orientation="vertical"
-            android:id="@+id/yourhintLL" >
+            android:id="@+id/yourtotalLL" >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
-                android:text="Hint count:"
+                android:text="Out of:"
                 android:textColor="#121212"
                 android:textSize="14pt" />
 
             <TextView
-                android:id="@+id/hintsUsedTV"
+                android:id="@+id/totalQsTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
@@ -212,24 +212,24 @@
             android:layout_height="1dp" />
 
         <LinearLayout
-            android:layout_width="181dp"
+            android:layout_width="121dp"
             android:layout_height="wrap_content"
             android:background="#FFC1A36D"
             android:gravity="center"
             android:orientation="vertical"
-            android:id="@+id/otherhintLL" >
+            android:id="@+id/othertotalLL" >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
-                android:text="Hint count:"
+                android:text="Out of:"
                 android:textColor="#121212"
                 android:textSize="14pt" />
 
             <TextView
-                android:id="@+id/prevHintsTV"
+                android:id="@+id/prevtotalQsTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
@@ -241,31 +241,60 @@
 
     <Space
         android:layout_width="1dp"
-        android:layout_height="15pt" />
+        android:layout_height="5pt" />
 
-    <Button
-        android:id="@+id/coolBTN"
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-condensed"
         android:gravity="center"
-        android:text="an interesting button."
-        android:textColor="#FF121212"
-        android:textSize="8pt"
-        app:backgroundTint="#FFC1A36D"
-        app:cornerRadius="0dp" />
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="5pt"
+            android:layout_height="1dp" />
+
+        <Button
+            android:id="@+id/coolBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="click me!"
+            android:textColor="#FF121212"
+            android:textSize="8pt"
+            app:backgroundTint="#FFC1A36D"
+            app:cornerRadius="0dp" />
+
+        <Space
+            android:layout_width="5pt"
+            android:layout_height="1dp" />
+
+        <Button
+            android:id="@+id/highscoreBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="leaderboard :3"
+            android:textColor="#FF121212"
+            android:textSize="8pt"
+            app:backgroundTint="#FFC1A36D"
+            app:cornerRadius="0dp" />
+
+    </LinearLayout>
 
     <Space
         android:layout_width="1dp"
-        android:layout_height="2pt" />
+        android:layout_height="2dp"/>
 
     <Button
-        android:id="@+id/highscoreBTN"
+        android:id="@+id/restartBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed"
         android:gravity="center"
-        android:text="Come look at high scores! :D"
+        android:text="RESTART QUIZ"
         android:textColor="#FF121212"
         android:textSize="8pt"
         app:backgroundTint="#FFC1A36D"
